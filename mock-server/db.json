@@ -1,0 +1,67 @@
+{
+  "catalogue": [
+    {
+      "id": "1e5ed4e7-8f80-4d37-820a-2613277ab14b",
+      "bookName": "Harry Potter and the Philosopher's Stone",
+      "bookDescription": "Harry Potter has never even heard of Hogwarts when the letters start dropping on the doormat at number four, Privet Drive. Addressed in green ink on yellowish parchment with a purple seal, they are swiftly confiscated by his grisly aunt and uncle. Then, on Harry’s eleventh birthday, a great beetle-eyed giant of a man called Rubeus Hagrid bursts in with some astonishing news: Harry Potter is a wizard, and he has a place at Hogwarts School of Witchcraft and Wizardry. An incredible adventure is about to begin!",
+      "imgLink": "https://www.wizardingworld.com/assets/_next/static/images/rectangle-1-9d57cdddd45b0d0d0d188c01621656aa.png.webp",
+      "stock": 500
+    },
+    {
+      "id": "28795786-b525-4ca9-9f81-48788ea50b7b",
+      "bookName": "Harry Potter and the Chamber of Secrets",
+      "bookDescription": "Harry Potter’s summer has included the worst birthday ever, doomy warnings from a house-elf called Dobby, and rescue from the Dursleys by his friend Ron Weasley in a magical flying car! Back at Hogwarts School of Witchcraft And Wizardry for his second year, Harry hears strange whispers echo through empty corridors – and then the attacks start. Students are found as though turned to stone … Dobby’s sinister predictions seem to be coming true.",
+      "imgLink": "https://www.wizardingworld.com/assets/_next/static/images/rectangle-2-2aa257d796327ebf5435c99f4ef08b2c.png.webp",
+      "stock": 500
+    },
+    {
+      "id": "49ebbccc-bcda-493f-b093-a9ab3c99deb2",
+      "bookName": "Harry Potter and the Prisoner of Azkaban",
+      "bookDescription": "When the Knight Bus crashes through the darkness and screeches to a halt in front of him, it’s the start of another far from ordinary year at Hogwarts for Harry Potter. Sirius Black, escaped mass-murderer and follower of Lord Voldemort, is on the run – and they say he is coming after Harry. In his first ever Divination class, Professor Trelawney sees an omen of death in Harry’s tea leaves... But perhaps most terrifying of all are the Dementors patrolling the school grounds, with their soul-sucking kiss.",
+      "imgLink": "https://www.wizardingworld.com/assets/_next/static/images/rectangle-3-bcc3d07e2e85f98278a44fb0210df3fc.png.webp",
+      "stock": 500
+    },
+    {
+      "id": "9d9b7dcb-f5f5-4c74-8392-90f65799b581",
+      "bookName": "Harry Potter and the Goblet of Fire",
+      "bookDescription": "The Triwizard Tournament is to be held at Hogwarts. Only wizards who are over seventeen are allowed to enter – but that doesn’t stop Harry dreaming that he will win the competition. Then at Hallowe’en, when the Goblet of Fire makes its selection, Harry is amazed to find his name is one of those that the magical cup picks out. He will face death-defying tasks, dragons and Dark wizards, but with the help of his best friends, Ron and Hermione, he might just make it through – alive!",
+      "imgLink": "https://www.wizardingworld.com/assets/_next/static/images/rectangle-4-633c39dfbd17fbf53eb5d77abf98c719.png.webp",
+      "stock": 500
+    },
+    {
+      "id": "a2685ac1-f9aa-403b-bc66-c2e339f17902",
+      "bookName": "Harry Potter and the Order of the Phoenix",
+      "bookDescription": "Dark times have come to Hogwarts. After the Dementors’ attack on his cousin Dudley, Harry Potter knows that Voldemort will stop at nothing to find him. There are many who deny the Dark Lord’s return, but Harry is not alone: a secret Order gathers at Grimmauld Place to fight against the Dark forces. Harry must allow Professor Snape to teach him how to protect himself from Voldemort’s savage assaults on his mind. But they are growing stronger by the day and Harry is running out of time.",
+      "imgLink": "https://www.wizardingworld.com/assets/_next/static/images/rectangle-5-25432dd08ecfa5368520c37167201f43.png.webp",
+      "stock": 500
+    },
+    {
+      "id": "2fd467a8-c825-4f47-9c04-32f3aefd8f60",
+      "bookName": "Harry Potter and the Half-Blood Prince",
+      "bookDescription": "When Dumbledore arrives at Privet Drive one summer night to collect Harry Potter, his wand hand is blackened and shrivelled, but he does not reveal why. Secrets and suspicion are spreading through the wizarding world, and Hogwarts itself is not safe. Harry is convinced that Malfoy bears the Dark Mark: there is a Death Eater amongst them. Harry will need powerful magic and true friends as he explores Voldemort’s darkest secrets, and Dumbledore prepares him to face his destiny.",
+      "imgLink": "https://www.wizardingworld.com/assets/_next/static/images/rectangle-6-2a2ff3752f1010435d6a2c5442188c74.png.webp",
+      "stock": 500
+    },
+    {
+      "id": "36827afa-83e1-45d8-9b39-d8fcb8d79713",
+      "bookName": "Harry Potter and the Deathly Hallows",
+      "bookDescription": "As he climbs into the sidecar of Hagrid’s motorbike and takes to the skies, leaving Privet Drive for the last time, Harry Potter knows that Lord Voldemort and the Death Eaters are not far behind. The protective charm that has kept Harry safe until now is broken, but he cannot keep hiding. The Dark Lord is breathing fear into everything Harry loves, and to stop him Harry will have to find and destroy the remaining Horcruxes. The final battle must begin – Harry must stand and face his enemy.",
+      "imgLink": "https://www.wizardingworld.com/assets/_next/static/images/rectangle-7-3247950c7a713ac780f1e069ca7f6ff3.png.webp",
+      "stock": 500
+    },
+    {
+      "id": "37173cb0-5267-4d52-9520-0844bf36e182",
+      "bookName": "Harry Potter and the Cursed Child - Parts One and Two",
+      "bookDescription": "The official playscript of the original West End production of Harry Potter and the Cursed Child. It was always difficult being Harry Potter and it isn’t much easier now that he is an overworked employee of the Ministry of Magic, a husband, and father of three school-age children. While Harry grapples with a past that refuses to stay where it belongs, his youngest son Albus must struggle with the weight of a family legacy he never wanted. As past and present fuse ominously, both father and son learn the uncomfortable truth: sometimes, darkness comes from unexpected places. The playscript for Harry Potter and the Cursed Child was originally released as a ‘special rehearsal edition’ alongside the opening of Jack Thorne’s play in London’s West End in summer 2016. Based on an original story by J.K. Rowling, John Tiffany and Jack Thorne, the play opened to rapturous reviews from theatregoers and critics alike, while the official playscript became an immediate global bestseller. This revised paperback edition updates the ‘special rehearsal edition’ with the conclusive and final dialogue from the play, which has subtly changed since its rehearsals, as well as a conversation piece between director John Tiffany and writer Jack Thorne, who share stories and insights about reading playscripts. This edition also includes useful background information including the Potter family tree and a timeline of events from the wizarding world prior to the beginning of Harry Potter and the Cursed Child.",
+      "imgLink": "https://www.wizardingworld.com/assets/_next/static/images/rectangle-8-8afc95c0ac89a719786d2f471c40b53a.png.webp",
+      "stock": 500
+    },
+    {
+      "id": "f73ec09f-e0e3-4783-887f-0faf31ee1487",
+      "bookName": "Fantastic Beasts and Where to Find Them",
+      "bookDescription": "An approved textbook at Hogwarts School of Witchcraft and Wizardry since publication, Newt Scamander's masterpiece has entertained wizarding families through the generations. Fantastic Beasts and Where to Find Them is an indispensable introduction to the magical beasts of the Wizarding World. In this comprehensively updated edition, eagle-eyed readers will spot a number of new beasts and an intriguing new author's note. Scamander's years of travel and research have created a tome of unparalleled importance. Some of the beasts will be familiar to readers of the Harry Potter books – the Hippogriff, the Basilisk, the Hungarian Horntail ... Others will surprise even the most ardent amateur Magizoologist. Dip in to discover the curious habits of magical beasts across five continents … 'No wizarding household is complete without a copy' – Albus Dumbledore",
+      "imgLink": "https://www.wizardingworld.com/assets/_next/static/images/rectangle-9-6dc52ba78d687348215ad1a0e0abb988.png.webp",
+      "stock": 500
+    }
+  ]
+}
