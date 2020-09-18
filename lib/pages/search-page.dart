@@ -19,7 +19,7 @@ class _SearchPageState extends State<SearchPage> {
             if(snapshot.hasData) {
               List<BookWidget> widgets = snapshot.data.map((data) => BookWidget(data.imgLink, data.bookName, data.stock > 0)).toList();
               if (snapshot.data.length > 0) {
-                return Column(
+                return ListView(
                   children: widgets,
                 );
               } else {
@@ -53,6 +53,9 @@ class BookWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      decoration: BoxDecoration(
+        border: Border.all(color: Colors.black26)
+      ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
@@ -64,7 +67,7 @@ class BookWidget extends StatelessWidget {
           Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Text(bookName),
+              Text(bookName, textAlign: TextAlign.left, ),
               Text('$inStock')
             ],
           )
