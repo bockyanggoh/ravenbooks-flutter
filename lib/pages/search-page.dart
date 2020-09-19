@@ -19,6 +19,7 @@ class _SearchPageState extends State<SearchPage> {
           builder: (context, snapshot) {
             if(snapshot.hasData) {
               List<BookWidget> widgets = snapshot.data.map((data) => BookWidget(data.imgLink, data.bookName, data.stock > 0)).toList();
+
               if (snapshot.data.length > 0) {
                 return ListView(
                   children: widgets,

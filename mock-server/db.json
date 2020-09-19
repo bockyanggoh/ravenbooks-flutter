@@ -63,5 +63,61 @@
       "imgLink": "https://www.wizardingworld.com/assets/_next/static/images/rectangle-9-6dc52ba78d687348215ad1a0e0abb988.png.webp",
       "stock": 500
     }
+  ],
+
+  "purchases": [
+    {
+      "id": "ce1c9e0a-e1e1-4352-9b52-a584f4bd3f2e",
+      "fulfillmentStatus": "Pending",
+      "username": "ravenclaw",
+      "orderTime": "",
+      "details": {
+        "payment": {
+          "id": "",
+          "status": "Pending",
+          "paymentClearanceTime": ""
+        },
+        "delivery": {
+          "id": "",
+          "scheduledDeliveryDate": "",
+          "deliveryCompany": ""
+        }
+      },
+      "items": [
+        {
+          "id": "f73ec09f-e0e3-4783-887f-0faf31ee1487",
+          "bookName": "Harry Potter and the Cursed Child - Parts One and Two",
+          "bookDescription": "The official playscript of the original West End production of Harry Potter and the Cursed Child. It was always difficult being Harry Potter and it isn’t much easier now that he is an overworked employee of the Ministry of Magic, a husband, and father of three school-age children. While Harry grapples with a past that refuses to stay where it belongs, his youngest son Albus must struggle with the weight of a family legacy he never wanted. As past and present fuse ominously, both father and son learn the uncomfortable truth: sometimes, darkness comes from unexpected places. The playscript for Harry Potter and the Cursed Child was originally released as a ‘special rehearsal edition’ alongside the opening of Jack Thorne’s play in London’s West End in summer 2016. Based on an original story by J.K. Rowling, John Tiffany and Jack Thorne, the play opened to rapturous reviews from theatregoers and critics alike, while the official playscript became an immediate global bestseller. This revised paperback edition updates the ‘special rehearsal edition’ with the conclusive and final dialogue from the play, which has subtly changed since its rehearsals, as well as a conversation piece between director John Tiffany and writer Jack Thorne, who share stories and insights about reading playscripts. This edition also includes useful background information including the Potter family tree and a timeline of events from the wizarding world prior to the beginning of Harry Potter and the Cursed Child.",
+          "imgLink": "https://www.wizardingworld.com/assets/_next/static/images/rectangle-8-8afc95c0ac89a719786d2f471c40b53a.png.webp",
+          "amount": 1
+        },
+        {
+          "id": "37173cb0-5267-4d52-9520-0844bf36e182",
+          "bookName": "Harry Potter and the Cursed Child - Parts One and Two",
+          "bookDescription": "The official playscript of the original West End production of Harry Potter and the Cursed Child. It was always difficult being Harry Potter and it isn’t much easier now that he is an overworked employee of the Ministry of Magic, a husband, and father of three school-age children. While Harry grapples with a past that refuses to stay where it belongs, his youngest son Albus must struggle with the weight of a family legacy he never wanted. As past and present fuse ominously, both father and son learn the uncomfortable truth: sometimes, darkness comes from unexpected places. The playscript for Harry Potter and the Cursed Child was originally released as a ‘special rehearsal edition’ alongside the opening of Jack Thorne’s play in London’s West End in summer 2016. Based on an original story by J.K. Rowling, John Tiffany and Jack Thorne, the play opened to rapturous reviews from theatregoers and critics alike, while the official playscript became an immediate global bestseller. This revised paperback edition updates the ‘special rehearsal edition’ with the conclusive and final dialogue from the play, which has subtly changed since its rehearsals, as well as a conversation piece between director John Tiffany and writer Jack Thorne, who share stories and insights about reading playscripts. This edition also includes useful background information including the Potter family tree and a timeline of events from the wizarding world prior to the beginning of Harry Potter and the Cursed Child.",
+          "imgLink": "https://www.wizardingworld.com/assets/_next/static/images/rectangle-8-8afc95c0ac89a719786d2f471c40b53a.png.webp",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "ce1c9e0a-e1e1-4352-9b52-a584f4bd3f2e",
+      "username": "ravenclaw",
+      "orderTime": "",
+      "details": {
+        "payment": null,
+        "delivery": null
+      },
+      "items": [
+        {
+          "id": "f73ec09f-e0e3-4783-887f-0faf31ee1487",
+          "amount": 1
+        },
+        {
+          "id": "37173cb0-5267-4d52-9520-0844bf36e182",
+          "amount": 1
+        }
+      ]
+    }
   ]
 }

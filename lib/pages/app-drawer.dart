@@ -11,8 +11,6 @@ class AppDrawer extends StatefulWidget {
 
 class _AppDrawerState extends State<AppDrawer> {
   int _selectedIndex = 0;
-  static const TextStyle optionStyle =
-  TextStyle(fontSize: 30, color: Colors.black, fontWeight: FontWeight.bold);
 
   void _onItemTapped(int index) {
     setState(() {
