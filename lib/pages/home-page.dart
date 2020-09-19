@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'app-drawer.dart';
+
 class HomePage extends StatefulWidget {
   _HomePageState createState() => _HomePageState();
 }
@@ -12,7 +14,7 @@ class _HomePageState extends State<HomePage> {
       body: Center(
         child: Text('Home Page'),
       ),
+      bottomNavigationBar: AppDrawer(),
     );
   }
-
 }

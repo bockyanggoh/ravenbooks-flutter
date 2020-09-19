@@ -1,9 +1,16 @@
 import 'package:bookstore_flutter/library.dart';
+import 'package:bookstore_flutter/pages/history-page.dart';
 import 'package:bookstore_flutter/pages/loading-page.dart';
 
 import 'pages/app-drawer.dart';
+import 'pages/home-page.dart';
 import 'pages/loading-page.dart';
 import 'package:flutter/material.dart';
+
+import 'pages/login-page.dart';
+import 'pages/search-page.dart';
+import 'pages/search-page.dart';
+import 'pages/settings-page.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,6 +23,15 @@ class MyApp extends StatelessWidget {
     Color baseSwatch = HexColor('#272822');
     return MaterialApp(
       title: 'RavenClaw BookStore',
+      initialRoute: '/login',
+      routes: {
+        '/': (context) => HomePage(),
+        '/login': (context) => LoginPage(),
+        '/catalogue': (context) => SearchPage(),
+        '/search': (context) => SearchPage(),
+        '/settings': (context) => SettingsPage(),
+        '/history': (context) => HistoryPage(),
+      },
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -32,7 +48,6 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: AppDrawer()
     );
   }
 }

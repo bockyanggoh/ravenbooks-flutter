@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../library.dart';
+import '../library.dart';
+import '../library.dart';
+import '../library.dart';
 class ErrorPage extends StatefulWidget {
   _ErrorPageState createState() => _ErrorPageState();
 }
@@ -27,11 +30,7 @@ class StatelessErrorPage extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text('Uhhh... Mischief Managed?', textAlign: TextAlign.center, style: TextStyle(
-            fontFamily: 'HarryP',
-            fontSize: 50,
-            color: HexColor('#800000')
-          ),),
+          Text('Uhhh... Mischief Managed?', textAlign: TextAlign.center, style: SharedConfig.titleStyle,),
           Image.asset('assets/image/error-img.png', height: 300, width: 300,),
           Container(
             padding: const EdgeInsets.only(top: 0.0),
@@ -40,12 +39,7 @@ class StatelessErrorPage extends StatelessWidget {
               '"The best of us must sometimes eat our words." - Albus Dumbledore',
               textAlign: TextAlign.justify,
               softWrap: true,
-              style: TextStyle(
-                  fontFamily: 'WolfpackHall',
-                  fontWeight: FontWeight.w200,
-                  fontSize: 15,
-                  color: Colors.grey[500]
-              ),
+              style: SharedConfig.descriptionStyle
             ),
           ),
           Container(
@@ -63,16 +57,12 @@ class StatelessErrorPage extends StatelessWidget {
                   'Error details not populated by the lazy developer. For shame. For shame.':
                   errorText,
               textAlign: TextAlign.center,
-              style: TextStyle(
-                fontFamily: 'WolfpackHall',
-                fontSize: 18,
-                color: Colors.black,
-              ),
+              style: SharedConfig.generalTextStyle
             ),
           ),
           GestureDetector(
             onTap: () {
-              print("Tapped!");
+              Navigator.of(context).pop();
             },
             child: Container(
               padding: const EdgeInsets.only(top: 10),
