@@ -1,4 +1,5 @@
 import 'package:bookstore_flutter/model/model.dart';
+import 'package:bookstore_flutter/pages/error-page.dart';
 import 'package:bookstore_flutter/service/service.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -26,7 +27,7 @@ class _SearchPageState extends State<SearchPage> {
                 return Text('No Data found!');
               }
             } else if (snapshot.hasError) {
-              return Text('Woopsies, ${snapshot.error}');
+              return StatelessErrorPage();
             } else {
               return CircularProgressIndicator();
             }

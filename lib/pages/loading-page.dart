@@ -14,12 +14,12 @@ class _LandingPageState extends State<LandingPage> {
   @override
   Widget build(BuildContext context) {
 
-    Future.delayed(Duration(seconds: 3), () {
-      Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => AppDrawer())
-      );
-    });
+    // Future.delayed(Duration(seconds: 3), () {
+    //   Navigator.push(
+    //     context,
+    //     MaterialPageRoute(builder: (context) => AppDrawer())
+    //   );
+    // });
     final TextStyle display = Theme.of(context).textTheme.headline4;
     return Scaffold(
       backgroundColor: Colors.white,

@@ -43,6 +43,13 @@ flutter_icons:
 # The following section is specific to Flutter.
 flutter:
   uses-material-design: true
+  fonts:
+    - family: HarryP
+      fonts:
+        - asset: fonts/HarryP.ttf
+    - family: WolfpackHall
+      fonts:
+        - asset: fonts/WolfpackHall.otf
   assets:
     - assets/video/
     - assets/icon/

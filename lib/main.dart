@@ -1,6 +1,7 @@
 import 'package:bookstore_flutter/library.dart';
 import 'package:bookstore_flutter/pages/loading-page.dart';
 
+import 'pages/app-drawer.dart';
 import 'pages/loading-page.dart';
 import 'package:flutter/material.dart';
 
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: LandingPage()
+      home: AppDrawer()
     );
   }
 }

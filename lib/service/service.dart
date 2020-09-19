@@ -7,7 +7,7 @@ class ApiService {
   String base = "http://10.0.2.2:8080";
 
   Future<List<BookCatalogueRecord>> fetchBookCatalogue() async {
-    final response = await http.get('$base/catalogue');
+    final response = await http.get('$base/catalogue').timeout(Duration(seconds: 5));
     if(response.statusCode != 200) {
       return new List(0);
     }
