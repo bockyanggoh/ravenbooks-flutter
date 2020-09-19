@@ -1,6 +1,11 @@
+import 'dart:async';
+
+import 'package:bookstore_flutter/model/purchase.dart';
+import 'package:bookstore_flutter/pages/error-page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../service/service.dart';
 import 'app-drawer.dart';
 
 class HistoryPage extends StatefulWidget {
@@ -9,24 +14,45 @@ class HistoryPage extends StatefulWidget {
 
 
 class _HistoryPageState extends State<HistoryPage> {
+  Future<OrderHistoryRecord> history;
+
+
+  @override
+  void initState() {
+    this.history = ApiService().fetchOrderHistory();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: ListView(
-          children: [
-            Text('1'),
-            Text('1'),
-            Text('1'),
-            Text('1')
-          ],
+        child: FutureBuilder<OrderHistoryRecord>(
+          future: this.history,
+          builder: (context, snapshot) {
+            if(snapshot.hasData) {
+              return Container(
+                child: Text('Placeholder!'),
+              );
+            } else if (snapshot.hasError) {
+                return renderException(snapshot.error);
+            } else {
+              return CircularProgressIndicator();
+            }
+          },
         ),
       ),
       bottomNavigationBar: AppDrawer(),
     );
   }
-
   renderPurchases() {
+  }
 
+  renderException(Object error) {
+    print(error);
+    if (error is TimeoutException) {
+      return StatelessErrorPage(errorText: 'Backend took too long to respond. For shame.');
+    }
+
+    return StatelessErrorPage();
   }
 }

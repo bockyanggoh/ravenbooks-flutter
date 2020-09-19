@@ -1,10 +1,12 @@
 import 'package:bookstore_flutter/model/model.dart';
+import 'package:bookstore_flutter/model/purchase.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
 class ApiService {
   String mockBase = "";
   String base = "http://10.0.2.2:8080";
+  String username = "ravenclaw";
 
   Future<List<BookCatalogueRecord>> fetchBookCatalogue() async {
     final response = await http.get('$base/catalogue').timeout(Duration(seconds: 5));
@@ -17,8 +19,12 @@ class ApiService {
         .map((model) => BookCatalogueRecord.fromJson(model)).toList();
     return books;
   }
-  //
-  // Future<http.Response> fetchBook(String id) {
-  //   return http.get('$base/catalogue/$id');
-  // }
+
+  Future<OrderHistoryRecord> fetchOrderHistory() async {
+    final response = await http.get('$base/username/$username/purchases').timeout(Duration(seconds: 5));
+    if (response.statusCode != 200) {
+      return null;
+    }
+    return OrderHistoryRecord.fromJson(json.decode(response.body));
+  }
 }
