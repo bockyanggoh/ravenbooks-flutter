@@ -20,11 +20,14 @@ class ApiService {
     return books;
   }
 
-  Future<OrderHistoryRecord> fetchOrderHistory() async {
+  Future<List<OrderHistoryRecord>> fetchOrderHistory() async {
     final response = await http.get('$base/username/$username/purchases').timeout(Duration(seconds: 5));
     if (response.statusCode != 200) {
-      return null;
+      return new List(0);
     }
-    return OrderHistoryRecord.fromJson(json.decode(response.body));
+
+    Iterable l = json.decode(response.body);
+    List<OrderHistoryRecord> records = l.map((model) => OrderHistoryRecord.fromJson(model)).toList();
+    return records;
   }
 }

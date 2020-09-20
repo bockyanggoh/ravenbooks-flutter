@@ -41,3 +41,11 @@ class SharedConfig {
     color: Colors.black,
   );
 }
+
+class RavenclawColors {
+  static final navy = HexColor("#0e1a40");
+  static final blue = HexColor("#222f5b");
+  static final grey = HexColor("#5d5d5d");
+  static final brown = HexColor("#946b2d");
+  static final black = HexColor("#000000");
+}

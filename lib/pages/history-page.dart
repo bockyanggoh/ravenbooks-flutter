@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:bookstore_flutter/library.dart';
 import 'package:bookstore_flutter/model/purchase.dart';
 import 'package:bookstore_flutter/pages/error-page.dart';
 import 'package:flutter/cupertino.dart';
@@ -14,7 +15,7 @@ class HistoryPage extends StatefulWidget {
 
 
 class _HistoryPageState extends State<HistoryPage> {
-  Future<OrderHistoryRecord> history;
+  Future<List<OrderHistoryRecord>> history;
 
 
   @override
@@ -25,8 +26,9 @@ class _HistoryPageState extends State<HistoryPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: RavenclawColors.navy,
       body: Center(
-        child: FutureBuilder<OrderHistoryRecord>(
+        child: FutureBuilder<List<OrderHistoryRecord>>(
           future: this.history,
           builder: (context, snapshot) {
             if(snapshot.hasData) {
@@ -44,10 +46,47 @@ class _HistoryPageState extends State<HistoryPage> {
       bottomNavigationBar: AppDrawer(),
     );
   }
-  renderPurchases() {
+
+  Widget renderPurchases(List<OrderHistoryRecord> records) {
+    if (records.length == 0) {
+      return noContent();
+    } else {
+      return hasContent(records);
+    }
   }
 
-  renderException(Object error) {
+  Widget hasContent(List<OrderHistoryRecord> records) {
+    return Container(
+      child: Row(
+        children: [
+          Text('Image'),
+          Text('Description'),
+          FlatButton(
+            child: Text('View'),
+          )
+        ],
+      ),
+    );
+  }
+
+  Widget noContent() {
+    return Container(
+      child: Column(
+        children: [
+          Image.asset('/assets/image/no-data.png',
+          width: 250,
+          height: 250,),
+          Text('No records found in the magic closet.'),
+          OutlineButton(
+            color: Colors.cyan,
+            child: Text('Text', style: SharedConfig.generalTextStyle,),
+          )
+        ],
+      ),
+    );
+  }
+
+  Widget renderException(Object error) {
     print(error);
     if (error is TimeoutException) {
       return StatelessErrorPage(errorText: 'Backend took too long to respond. For shame.');

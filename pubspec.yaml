@@ -50,6 +50,9 @@ flutter:
     - family: WolfpackHall
       fonts:
         - asset: fonts/WolfpackHall.otf
+    - family: SofiaPro
+      fonts:
+        - asset: fonts/SofiaPro.otf
   assets:
     - assets/video/
     - assets/icon/
