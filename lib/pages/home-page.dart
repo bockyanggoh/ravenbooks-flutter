@@ -1,7 +1,7 @@
 import 'package:bookstore_flutter/library.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
+import 'package:flutter_svg/flutter_svg.dart';
 import 'app-drawer.dart';
 
 class HomePage extends StatefulWidget {
@@ -18,8 +18,6 @@ class _HomePageState extends State<HomePage> {
           children: [
             headerSection(),
             placeOrderTile(),
-            checkOrderTile(),
-            viewOrderHistory()
           ],
         ),
       ),
@@ -46,11 +44,18 @@ class _HomePageState extends State<HomePage> {
           color: RavenclawColors.brown
         )
       ),
-      child: GestureDetector(
+      child: InkWell(
+        onTap: () {
+          showDialog(context: context,
+          child: CreateOrder()
+          );
+        },
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            Text("Logo"),
+            SvgPicture.asset(
+              '/assets/icon/box.svg'
+            ),
             Text("Place Order")
           ],
         ),
@@ -106,4 +111,46 @@ class _HomePageState extends State<HomePage> {
       ),
     );
   }
+
+}
+
+class CreateOrder extends StatefulWidget {
+  _CreateOrderState createState() => _CreateOrderState();
+}
+
+class _CreateOrderState extends State<CreateOrder> {
+  int currentStep = 0;
+  bool completed = false;
+
+  List<Step> steps = [
+    Step(
+      title: const Text('User Details'),
+      isActive: true,
+      state: StepState.complete,
+      content: Column(
+        children: [
+          TextFormField(
+            decoration: InputDecoration(labelText: 'Username'),
+          )
+        ],
+      )
+    )
+  ];
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Place order')
+      ),
+      body: Column(
+      children: [
+        Expanded(
+          child: Stepper (
+            steps: steps,
+          )
+        )
+      ],),
+    );
+  }
+
 }

@@ -14,14 +14,21 @@ class HexColor extends Color {
   HexColor(final String hexColor) : super(_getColorFromHex(hexColor));
 }
 
-class MonoKaiColors {
-  static Color greyDark = HexColor("#272822");
-  static Color greyMedium = HexColor("#3e3d32");
-  static Color greyLight = HexColor("#75715e");
-  static Color white = HexColor("#f8f8f2");
-}
-
 class SharedConfig {
+  static final Gradient gradientBackground = LinearGradient(
+    begin: Alignment.topRight,
+    end: Alignment.bottomLeft,
+    stops: [
+      0.1,
+      0.6,
+      0.3
+    ],
+    colors: [
+      RavenclawColors.white,
+      RavenclawColors.navy,
+      RavenclawColors.brown
+    ]
+  );
   static final TextStyle titleStyle = TextStyle(
     fontFamily: 'HarryP',
     fontSize: 50,
@@ -36,7 +43,7 @@ class SharedConfig {
   );
 
   static final TextStyle generalTextStyle = TextStyle(
-    fontFamily: 'WolfpackHall',
+    fontFamily: 'SofiaPro',
     fontSize: 18,
     color: Colors.black,
   );
@@ -48,4 +55,5 @@ class RavenclawColors {
   static final grey = HexColor("#5d5d5d");
   static final brown = HexColor("#946b2d");
   static final black = HexColor("#000000");
+  static final white = Colors.white;
 }
